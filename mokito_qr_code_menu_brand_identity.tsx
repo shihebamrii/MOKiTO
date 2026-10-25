@@ -3417,7 +3417,7 @@ export default function MokitoMenuApp() {
                 >
                   <div className="flex items-center gap-2.5">
                     <div className="w-9 h-9 rounded-lg bg-[#EFE2CA] border border-[#1E1D1B]/20 p-1 flex items-center justify-center shrink-0 shadow-sm">
-                      {React.createElement(getDishIllustration(ALL_ITEMS_MAP[selectedDish.suggestedPairingId]), { className: 'w-full h-full object-contain' })}
+                      {React.createElement(getDishIll ustration(ALL_ITEMS_MAP[selectedDish.suggestedPairingId]), { className: 'w-full h-full object-contain' })}
                     </div>
                     <div>
                       <span className="mokito-heading text-[11px] uppercase font-bold tracking-wider opacity-75 block">
