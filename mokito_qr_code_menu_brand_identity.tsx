@@ -2566,22 +2566,38 @@ export default function MokitoMenuApp() {
       <header className="relative border-b-2 overflow-hidden" style={{ borderColor: theme.borderSolid }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-10">
           <div
-            className="relative border-2 rounded-2xl p-6 sm:p-10 shadow-sm"
+            className="relative border-2 rounded-3xl p-6 sm:p-10 shadow-sm"
             style={{
               borderColor: theme.borderSolid,
-              backgroundColor: isDarkMode ? 'rgba(32, 29, 25, 0.70)' : 'rgba(223, 201, 168, 0.55)'
+              backgroundColor: isDarkMode ? 'rgba(32, 29, 25, 0.75)' : 'rgba(223, 201, 168, 0.55)'
             }}
           >
+            {/* Vintage French Corner Accents */}
             <div className="hidden sm:block absolute top-3 left-3 w-3 h-3 border-t-2 border-l-2" style={{ borderColor: theme.borderSolid }} />
             <div className="hidden sm:block absolute top-3 right-3 w-3 h-3 border-t-2 border-r-2" style={{ borderColor: theme.borderSolid }} />
             <div className="hidden sm:block absolute bottom-3 left-3 w-3 h-3 border-b-2 border-l-2" style={{ borderColor: theme.borderSolid }} />
             <div className="hidden sm:block absolute bottom-3 right-3 w-3 h-3 border-b-2 border-r-2" style={{ borderColor: theme.borderSolid }} />
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              {/* Left Column: Brand, Business Concept Headline, Caption & Pillars */}
               <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left">
-                <MokitoWordmarkSVG className="h-20 sm:h-28 w-auto" color={theme.text} />
+                {/* Concept Overline Badge */}
+                <div
+                  className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border text-[11px] font-bold uppercase tracking-widest mb-3"
+                  style={{
+                    borderColor: theme.border,
+                    backgroundColor: isDarkMode ? '#282420' : '#EFE2CA'
+                  }}
+                >
+                  <DiamondSVG className="w-2 h-2 text-[#C83E2B]" />
+                  <span>MENZAH 1, TUNIS • PIONNIER DU BREAD BOWL</span>
+                  <DiamondSVG className="w-2 h-2 text-[#C83E2B]" />
+                </div>
 
-                <div className="w-full max-w-md my-4">
+                <MokitoWordmarkSVG className="h-16 sm:h-24 w-auto" color={theme.text} />
+
+                {/* Decorative Diamond Divider */}
+                <div className="w-full max-w-md my-3.5">
                   <div className="flex items-center justify-center lg:justify-start gap-3">
                     <div className="h-[1.5px] w-16" style={{ backgroundColor: theme.borderSolid }} />
                     <DiamondSVG className="w-2.5 h-2.5" />
@@ -2589,76 +2605,142 @@ export default function MokitoMenuApp() {
                   </div>
                 </div>
 
-                <blockquote
-                  className="mokito-heading text-base sm:text-lg md:text-xl font-medium leading-snug max-w-xl tracking-wide"
+                {/* Core Business Concept Headline */}
+                <h1
+                  className="mokito-heading text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-wide leading-tight"
                   style={{ color: theme.text }}
                 >
-                  Il n’y a pas de grande cuisine sans sincérité. Ce menu est né d’envies simples, d’assiettes qu’on aime vraiment préparer. On a réduit, épuré, gardé l’essentiel. Pas pour être à la mode. Pour être justes.
-                </blockquote>
+                  Du pain creusé, bien doré, garni de fondue de fromage maison & de légumes confits.
+                </h1>
 
+                {/* Business Explanation Caption */}
+                <p
+                  className="mt-3 text-xs sm:text-sm font-medium leading-relaxed max-w-xl"
+                  style={{ color: theme.textMuted }}
+                >
+                  Pourquoi manger dans une assiette ordinaire quand on peut dévorer son plat jusqu'à la croûte ? Chez <strong className="font-bold">MOKiTO</strong>, chaque repas signature est préparé dans une boule de pain artisanal évidée à la main, toastée au four, puis généreusement nappée de fondue de fromage fondante, de légumes confits méditerranéens et de viandes grillées. Un plat complet, réconfortant et 100% fait maison, toujours servi chaud avec ses potatoes croustillantes.
+                </p>
+
+                {/* 3 Business Pillars Grid */}
                 <div
-                  className="mt-6 pt-5 border-t w-full grid grid-cols-3 gap-2 sm:gap-4 text-left"
+                  className="mt-6 pt-5 border-t w-full grid grid-cols-1 sm:grid-cols-3 gap-3 text-left"
                   style={{ borderColor: theme.border }}
                 >
-                  <div className="flex items-start gap-2">
-                    <DiamondSVG className="w-2.5 h-2.5 mt-1 shrink-0" />
+                  <div className="flex items-start gap-2.5 p-2 rounded-xl" style={{ backgroundColor: isDarkMode ? 'rgba(0,0,0,0.2)' : 'rgba(255,255,255,0.25)' }}>
+                    <span className="text-base">🥖</span>
                     <div>
                       <div className="mokito-heading text-xs sm:text-sm font-bold uppercase tracking-wider">
-                        PAIN CREUSÉ & DORÉ
+                        Assiette Comestible
                       </div>
-                      <div className="text-[11px] hidden sm:block" style={{ color: theme.textMuted }}>
-                        Garni de fondue de fromage maison
+                      <div className="text-[11px] leading-tight mt-0.5" style={{ color: theme.textMuted }}>
+                        Boule au levain croustillante évidée à la main
                       </div>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-2">
-                    <DiamondSVG className="w-2.5 h-2.5 mt-1 shrink-0" />
+                  <div className="flex items-start gap-2.5 p-2 rounded-xl" style={{ backgroundColor: isDarkMode ? 'rgba(0,0,0,0.2)' : 'rgba(255,255,255,0.25)' }}>
+                    <span className="text-base">🧀</span>
                     <div>
                       <div className="mokito-heading text-xs sm:text-sm font-bold uppercase tracking-wider">
-                        PLATS ENTIERS
+                        Fondue & Confit
                       </div>
-                      <div className="text-[11px] hidden sm:block" style={{ color: theme.textMuted }}>
-                        Salades repas & croûtons maison
+                      <div className="text-[11px] leading-tight mt-0.5" style={{ color: theme.textMuted }}>
+                        Fromages fondants et aubergines/courgettes mijotées
                       </div>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-2">
-                    <DiamondSVG className="w-2.5 h-2.5 mt-1 shrink-0" />
+                  <div className="flex items-start gap-2.5 p-2 rounded-xl" style={{ backgroundColor: isDarkMode ? 'rgba(0,0,0,0.2)' : 'rgba(255,255,255,0.25)' }}>
+                    <span className="text-base">🥔</span>
                     <div>
                       <div className="mokito-heading text-xs sm:text-sm font-bold uppercase tracking-wider">
-                        LÉGUMES CONFITS
+                        Potatoes Incluses
                       </div>
-                      <div className="text-[11px] hidden sm:block" style={{ color: theme.textMuted }}>
-                        Aubergines & courgettes fraîches
+                      <div className="text-[11px] leading-tight mt-0.5" style={{ color: theme.textMuted }}>
+                        Servies avec chaque Bread Bowl & sauces maison
                       </div>
                     </div>
                   </div>
+                </div>
+
+                {/* Fast Action Links */}
+                <div className="mt-5 flex items-center gap-3 flex-wrap justify-center lg:justify-start">
+                  <a
+                    href="#bread-bowls"
+                    className="px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition shadow-sm flex items-center gap-1.5 hover:bg-[#C83E2B] hover:text-white"
+                    style={{
+                      backgroundColor: isDarkMode ? '#F4E8D3' : '#1E1D1B',
+                      color: isDarkMode ? '#1E1D1B' : '#EFE2CA'
+                    }}
+                  >
+                    <span>Découvrir la carte</span>
+                    <span>↓</span>
+                  </a>
+
+                  <button
+                    onClick={() => setIsTableModalOpen(true)}
+                    className="px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider border transition flex items-center gap-1.5 hover:bg-black/10"
+                    style={{
+                      borderColor: theme.borderSolid,
+                      color: theme.text
+                    }}
+                  >
+                    <QrCodeSVG className="w-3.5 h-3.5" />
+                    <span>Table {tableNumber} (QR Code)</span>
+                  </button>
                 </div>
               </div>
 
+              {/* Right Column: Visual Concept Showcase with Signature Bread Bowl & Brand Seals */}
               <div className="lg:col-span-5 flex flex-col items-center justify-center relative">
-                <div className="relative p-2 flex items-center justify-center">
-                  <RunningServerIllustration
-                    className="w-56 h-48 sm:w-68 sm:h-56"
-                    stroke={theme.borderSolid}
-                  />
-                  <div className="absolute -bottom-2 -right-2 hidden sm:block">
-                    <ArtisanalSealBadgeSVG className="w-20 h-20 opacity-80" stroke={theme.borderSolid} />
+                <div
+                  className="relative p-4 rounded-3xl border shadow-lg flex flex-col items-center justify-center w-full max-w-sm"
+                  style={{
+                    backgroundColor: isDarkMode ? 'rgba(38, 34, 30, 0.85)' : 'rgba(247, 238, 223, 0.90)',
+                    borderColor: theme.border
+                  }}
+                >
+                  {/* Subtle Background Watermark Logo */}
+                  <div className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none overflow-hidden">
+                    <RunningServerIllustration className="w-64 h-64 scale-125" stroke={theme.borderSolid} />
+                  </div>
+
+                  {/* Rich Signature Bread Bowl Showcase */}
+                  <div className="relative z-10 w-full flex flex-col items-center">
+                    <div className="w-48 h-36 sm:w-56 sm:h-40 flex items-center justify-center">
+                      <BreadBowlArtisanalIllustration className="w-full h-full object-contain filter drop-shadow-md" stroke={theme.borderSolid} />
+                    </div>
+
+                    <div className="mt-1 text-center">
+                      <div className="mokito-heading text-sm font-bold uppercase tracking-wider">
+                        LE BREAD BOWL SIGNATURE
+                      </div>
+                      <div className="text-[11px] font-medium" style={{ color: theme.textMuted }}>
+                        Poulet ou Viande Hachée • Servi chaud avec potatoes
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Floating Artisanal Quality Seal */}
+                  <div className="absolute -bottom-4 -right-4 hidden sm:block z-20">
+                    <ArtisanalSealBadgeSVG className="w-20 h-20 filter drop-shadow-md" stroke={theme.borderSolid} />
                   </div>
                 </div>
 
+                {/* Authentic Delivery Partners Bar */}
                 <div
-                  className="mt-2 inline-flex items-center gap-2 px-3.5 py-1 rounded-full border text-[11px] font-bold uppercase tracking-widest"
+                  className="mt-4 flex items-center gap-3 px-4 py-1.5 rounded-full border text-[11px] font-bold"
                   style={{
                     borderColor: theme.border,
-                    backgroundColor: isDarkMode ? '#282420' : '#EFE2CA'
+                    backgroundColor: isDarkMode ? '#24201C' : '#EFE2CA'
                   }}
                 >
-                  <DiamondSVG className="w-2 h-2" />
-                  <span>Du pain creusé, bien garni, bien doré</span>
-                  <DiamondSVG className="w-2 h-2" />
+                  <span className="opacity-75 uppercase tracking-wider text-[10px]">Livraison rapide :</span>
+                  <span className="font-extrabold text-[#00A082]">Glovo</span>
+                  <span>•</span>
+                  <span className="font-extrabold text-[#E50914]">Yassir</span>
+                  <span>•</span>
+                  <span className="font-extrabold text-[#FF6600]">KooL</span>
                 </div>
               </div>
             </div>
@@ -3417,7 +3499,7 @@ export default function MokitoMenuApp() {
                 >
                   <div className="flex items-center gap-2.5">
                     <div className="w-9 h-9 rounded-lg bg-[#EFE2CA] border border-[#1E1D1B]/20 p-1 flex items-center justify-center shrink-0 shadow-sm">
-                      {React.createElement(getDishIll ustration(ALL_ITEMS_MAP[selectedDish.suggestedPairingId]), { className: 'w-full h-full object-contain' })}
+                      {React.createElement(getDishIllustration(ALL_ITEMS_MAP[selectedDish.suggestedPairingId]), { className: 'w-full h-full object-contain' })}
                     </div>
                     <div>
                       <span className="mokito-heading text-[11px] uppercase font-bold tracking-wider opacity-75 block">
