@@ -116,54 +116,270 @@ export const MokitoWordmarkSVG: React.FC<{ className?: string; color?: string }>
   </svg>
 );
 
-export const RunningServerIllustration: React.FC<{ className?: string; stroke?: string }> = ({
-  className = 'w-64 h-64',
-  stroke = '#1E1D1B'
+export const PillarBreadIcon: React.FC<{ className?: string; stroke?: string }> = ({
+  className = 'w-4 h-4',
+  stroke = 'currentColor'
 }) => (
-  <svg viewBox="0 0 280 230" fill="none" xmlns="http://www.w3.org/2000/svg" className={className} aria-hidden="true">
-    <path d="M36 185C24 140 42 74 92 42C142 10 212 22 244 76" stroke={stroke} strokeWidth="1.2" strokeDasharray="4 5" opacity="0.35" />
-    <path d="M142 26C131 23 121 31 118 43C115 55 111 62 106 66C116 69 125 67 130 62" stroke={stroke} strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M139 26C150 26 157 35 157 47C157 59 160 66 165 70C155 71 148 67 146 62" stroke={stroke} strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-    <circle cx="137" cy="44" r="12" stroke={stroke} strokeWidth="2.4" />
-    <path d="M132 41C133.5 39.8 135.5 39.8 137 41" stroke={stroke} strokeWidth="1.8" strokeLinecap="round" />
-    <path d="M141 41C142.5 39.8 144.5 39.8 146 41" stroke={stroke} strokeWidth="1.8" strokeLinecap="round" />
-    <path d="M133 48.5C136 51 141 51 143.5 47.5" stroke={stroke} strokeWidth="1.8" strokeLinecap="round" />
-
-    {/* Torso & Jacket */}
-    <path d="M123 66L102 112L125 121L136 84L146 119L166 111L151 66" stroke={stroke} strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M130 67L136 77L143 67" stroke={stroke} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M126 105L145 104" stroke={stroke} strokeWidth="2" strokeLinecap="round" />
-
-    {/* Left Arm with Steaming Bread Bowl */}
-    <path d="M122 68L84 79L58 76" stroke={stroke} strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M118 81L87 90L55 85" stroke={stroke} strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M24 64C24 76 34 84 47 84C60 84 70 76 70 64H24Z" fill={stroke} stroke={stroke} strokeWidth="2.2" strokeLinejoin="round" />
-    <path d="M27 64C29 56 37 52 47 52C57 52 65 56 67 64" stroke={stroke} strokeWidth="2.2" strokeLinecap="round" />
-    <path d="M32 61C36 57 42 62 47 58C52 55 58 60 62 59" stroke={stroke} strokeWidth="1.8" strokeLinecap="round" />
-    <path d="M39 46C38 41 42 39 41 34" stroke={stroke} strokeWidth="1.7" strokeLinecap="round" />
-    <path d="M49 45C48 40 52 38 51 33" stroke={stroke} strokeWidth="1.7" strokeLinecap="round" />
-    <path d="M58 47C57 43 60 41 59 37" stroke={stroke} strokeWidth="1.7" strokeLinecap="round" />
-
-    {/* Right Arm with Fresh Salad Bowl */}
-    <path d="M152 67L188 73L216 65" stroke={stroke} strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M156 80L190 84L222 72" stroke={stroke} strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M202 52C205 65 215 71 228 71C241 71 251 65 254 52H202Z" stroke={stroke} strokeWidth="2.4" strokeLinejoin="round" />
-    <path d="M206 57H250" stroke={stroke} strokeWidth="1.5" strokeLinecap="round" />
-    <path d="M206 51C205 44 212 40 217 45C220 38 229 38 232 45C238 40 247 44 246 51" stroke={stroke} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-    <circle cx="222" cy="48" r="2.5" fill={stroke} />
-    <circle cx="236" cy="48" r="2.5" fill={stroke} />
-
-    {/* Legs & Movement */}
-    <path d="M114 116L106 158L81 162L81 176L120 173L131 124" stroke={stroke} strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M138 122L160 161L141 187L151 197L181 164L155 115" stroke={stroke} strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M69 159V183H80V159H69Z" stroke={stroke} strokeWidth="2.2" strokeLinejoin="round" />
-    <line x1="73" y1="166" x2="79" y2="166" stroke={stroke} strokeWidth="1.6" />
-    <line x1="73" y1="172" x2="79" y2="172" stroke={stroke} strokeWidth="1.6" />
-    <path d="M136 189L155 208L163 200L144 181L136 189Z" stroke={stroke} strokeWidth="2.2" strokeLinejoin="round" />
-    <line x1="48" y1="192" x2="95" y2="192" stroke={stroke} strokeWidth="1.6" strokeLinecap="round" opacity="0.45" />
-    <line x1="115" y1="214" x2="178" y2="214" stroke={stroke} strokeWidth="1.6" strokeLinecap="round" opacity="0.45" />
+  <svg viewBox="0 0 24 24" fill="none" stroke={stroke} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M4 11C4 7 7.5 5 12 5C16.5 5 20 7 20 11V15C20 18 16.5 19 12 19C7.5 19 4 18 4 15V11Z" />
+    <path d="M8 9C9.5 10 11 10 12 9" />
+    <path d="M12 9C13 10 14.5 10 16 9" />
   </svg>
 );
+
+export const PillarCheeseIcon: React.FC<{ className?: string; stroke?: string }> = ({
+  className = 'w-4 h-4',
+  stroke = 'currentColor'
+}) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke={stroke} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M3 13L21 9L19 19H5L3 13Z" />
+    <path d="M3 13C3 11 7 8 13 8C19 8 21 10 21 11" />
+    <circle cx="8" cy="14" r="1.2" fill={stroke} />
+    <circle cx="14" cy="13" r="1.5" fill={stroke} />
+    <circle cx="11" cy="16.5" r="1" fill={stroke} />
+  </svg>
+);
+
+export const PillarPotatoIcon: React.FC<{ className?: string; stroke?: string }> = ({
+  className = 'w-4 h-4',
+  stroke = 'currentColor'
+}) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke={stroke} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <ellipse cx="12" cy="12" rx="9" ry="6" transform="rotate(-15 12 12)" />
+    <path d="M8 10h.01M15 11h.01M11 14h.01M16 14h.01" />
+  </svg>
+);
+
+export const RunningServerIllustration: React.FC<{
+  className?: string;
+  stroke?: string;
+  isDark?: boolean;
+}> = ({
+  className = 'w-64 h-64',
+  stroke = '#1E1D1B',
+  isDark = false
+}) => {
+  const accentGold = '#D6BE9B';
+  const crimson = '#C83E2B';
+  const napkinColor = isDark ? '#36302A' : '#FAF6EE';
+  const clocheGleam = isDark ? 'rgba(255,255,255,0.15)' : 'rgba(255,255,255,0.45)';
+
+  return (
+    <svg viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg" className={className} aria-hidden="true">
+      <defs>
+        <linearGradient id="serverApronGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={isDark ? '#2E2822' : '#EFE2CA'} />
+          <stop offset="100%" stopColor={isDark ? '#221D18' : '#DECBB0'} />
+        </linearGradient>
+        <linearGradient id="clocheDomeGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor={isDark ? '#4A4035' : '#FAF5ED'} />
+          <stop offset="50%" stopColor={isDark ? '#332C24' : '#E5D6BF'} />
+          <stop offset="100%" stopColor={isDark ? '#221E19' : '#CBB89C'} />
+        </linearGradient>
+      </defs>
+
+      {/* Speed & Motion Trail Lines */}
+      <g stroke={stroke} strokeWidth="1.6" strokeLinecap="round" opacity="0.35">
+        <path d="M25 195C60 195 95 198 120 198" strokeDasharray="6 8" />
+        <path d="M40 215C75 215 110 218 140 218" strokeDasharray="8 6" />
+        <path d="M60 235C90 235 125 237 150 237" strokeDasharray="4 6" />
+        <path d="M35 130C55 135 75 145 90 160" strokeDasharray="3 7" />
+        <path d="M50 110C70 118 85 130 95 145" strokeDasharray="5 7" />
+      </g>
+
+      {/* Steam Wisps Floating from Cloche */}
+      <g stroke={stroke} strokeWidth="1.8" strokeLinecap="round" opacity="0.5">
+        <path d="M80 50C76 40 84 32 80 22C77 14 83 8 80 2" />
+        <path d="M96 48C92 36 100 28 95 18C92 10 98 4 94 -2" />
+        <path d="M112 52C108 42 116 34 112 24C109 16 115 10 112 4" />
+      </g>
+
+      {/* High-Lifting Arm & Serving Cloche Tray */}
+      <g>
+        {/* Tray Base Rim */}
+        <ellipse cx="98" cy="88" rx="54" ry="12" fill={isDark ? '#2E2822' : '#DECBB0'} stroke={stroke} strokeWidth="2.4" />
+        <ellipse cx="98" cy="85" rx="52" ry="10" fill="url(#clocheDomeGrad)" stroke={stroke} strokeWidth="1.8" />
+
+        {/* Domed Cloche Bell */}
+        <path
+          d="M52 84C52 46 72 32 98 32C124 32 144 46 144 84Z"
+          fill="url(#clocheDomeGrad)"
+          stroke={stroke}
+          strokeWidth="2.4"
+          strokeLinejoin="round"
+        />
+
+        {/* Cloche Handle Knob */}
+        <circle cx="98" cy="27" r="6" fill={crimson} stroke={stroke} strokeWidth="2.2" />
+        <path d="M95 32H101" stroke={stroke} strokeWidth="2" strokeLinecap="round" />
+
+        {/* Cloche Gleam / Light Accent */}
+        <path d="M64 80C64 52 78 40 94 38" stroke={clocheGleam} strokeWidth="3" strokeLinecap="round" />
+        <ellipse cx="98" cy="84" rx="42" ry="4" stroke={stroke} strokeWidth="1.2" opacity="0.3" />
+
+        {/* Server Fingertips Balancing the Tray */}
+        <path d="M82 92C84 89 88 88 92 90" stroke={stroke} strokeWidth="2.4" strokeLinecap="round" />
+        <path d="M94 92C96 89 100 88 104 90" stroke={stroke} strokeWidth="2.4" strokeLinecap="round" />
+        <path d="M106 92C108 89 112 88 116 90" stroke={stroke} strokeWidth="2.4" strokeLinecap="round" />
+
+        {/* Raised Left Arm */}
+        <path
+          d="M98 94L110 128L138 122L146 102L126 98L106 92Z"
+          fill={isDark ? '#3D352B' : '#E8DCBF'}
+          stroke={stroke}
+          strokeWidth="2.4"
+          strokeLinejoin="round"
+        />
+        {/* Crisp Shirt Cuff */}
+        <rect x="98" y="93" width="14" height="6" rx="2" fill={napkinColor} stroke={stroke} strokeWidth="1.8" transform="rotate(-15 98 93)" />
+      </g>
+
+      {/* Head, Classic French Waiter Cap & Mustache */}
+      <g>
+        {/* French Calot / Cap */}
+        <path
+          d="M172 48C172 34 186 24 204 24C222 24 234 34 236 48L172 48Z"
+          fill="#1E1D1B"
+          stroke={stroke}
+          strokeWidth="2.4"
+          strokeLinejoin="round"
+        />
+        <path d="M168 48C182 46 226 46 240 48" stroke={stroke} strokeWidth="2.6" strokeLinecap="round" />
+        <circle cx="204" cy="36" r="3.5" fill={crimson} />
+
+        {/* Face */}
+        <path
+          d="M182 48C182 68 190 82 205 82C220 82 228 68 228 48"
+          fill={isDark ? '#3D352B' : '#F7EFE1'}
+          stroke={stroke}
+          strokeWidth="2.4"
+          strokeLinejoin="round"
+        />
+
+        {/* Ear */}
+        <path d="M178 56C176 56 174 62 178 66C180 68 182 66 182 62" stroke={stroke} strokeWidth="2" strokeLinecap="round" />
+
+        {/* Eye & Brow with Joyful Wink */}
+        <circle cx="212" cy="56" r="3" fill={stroke} />
+        <path d="M208 50C212 48 216 49 218 51" stroke={stroke} strokeWidth="1.8" strokeLinecap="round" />
+        <path d="M190 54C193 52 197 53 199 56" stroke={stroke} strokeWidth="1.8" strokeLinecap="round" />
+
+        {/* Rosy Cheek */}
+        <circle cx="218" cy="64" r="4.5" fill={crimson} opacity="0.35" />
+
+        {/* Iconic French Mustache */}
+        <path
+          d="M192 68C198 64 205 67 206 70C207 67 214 64 220 68C224 71 226 69 228 66C227 72 220 76 213 74C208 72 206 72 206 72C206 72 204 72 199 74C192 76 185 72 184 66C186 69 188 71 192 68Z"
+          fill={stroke}
+          stroke={stroke}
+          strokeWidth="1.5"
+          strokeLinejoin="round"
+        />
+
+        {/* Confident Smile */}
+        <path d="M200 75C203 78 209 78 212 75" stroke={stroke} strokeWidth="2" strokeLinecap="round" />
+      </g>
+
+      {/* Collar & Bow Tie */}
+      <g>
+        <path d="M195 82L190 94L206 91L222 94L217 82" fill={napkinColor} stroke={stroke} strokeWidth="2.2" strokeLinejoin="round" />
+        {/* Crimson Bow Tie */}
+        <path
+          d="M196 88L186 82L186 96L196 90Z"
+          fill={crimson}
+          stroke={stroke}
+          strokeWidth="2"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M216 88L226 82L226 96L216 90Z"
+          fill={crimson}
+          stroke={stroke}
+          strokeWidth="2"
+          strokeLinejoin="round"
+        />
+        <rect x="196" y="85" width="20" height="9" rx="3" fill={crimson} stroke={stroke} strokeWidth="2" />
+      </g>
+
+      {/* Torso, Vest & Classic Long Bistro Apron */}
+      <g>
+        {/* Bistro Vest */}
+        <path
+          d="M184 94L160 148L190 156L206 130L222 156L248 146L228 94Z"
+          fill={isDark ? '#26221D' : '#2A2621'}
+          stroke={stroke}
+          strokeWidth="2.4"
+          strokeLinejoin="round"
+        />
+        {/* Brass Vest Buttons */}
+        <circle cx="206" cy="110" r="2.5" fill={accentGold} stroke={stroke} strokeWidth="1.2" />
+        <circle cx="206" cy="122" r="2.5" fill={accentGold} stroke={stroke} strokeWidth="1.2" />
+        <circle cx="206" cy="134" r="2.5" fill={accentGold} stroke={stroke} strokeWidth="1.2" />
+
+        {/* Long Flowing Bistro Apron */}
+        <path
+          d="M168 152C182 150 230 148 244 152L254 216C242 222 170 224 158 214L168 152Z"
+          fill="url(#serverApronGrad)"
+          stroke={stroke}
+          strokeWidth="2.4"
+          strokeLinejoin="round"
+        />
+        {/* Apron Waistband & Ribbon Bow */}
+        <path d="M166 152H246" stroke={stroke} strokeWidth="3" strokeLinecap="round" />
+        <path d="M246 153C254 156 262 165 264 176" stroke={stroke} strokeWidth="2" strokeLinecap="round" />
+        <path d="M246 155C252 162 258 174 256 186" stroke={stroke} strokeWidth="2" strokeLinecap="round" />
+        {/* Apron Pocket with Checkbook / Stylo */}
+        <path d="M188 172H222V192H188V172Z" fill="none" stroke={stroke} strokeWidth="1.8" />
+        <line x1="196" y1="166" x2="196" y2="174" stroke={stroke} strokeWidth="2" strokeLinecap="round" />
+      </g>
+
+      {/* Right Arm Carrying Bistro Napkin / Torchon */}
+      <g>
+        <path
+          d="M236 102L265 124L268 152L248 154L250 134L228 120"
+          fill={isDark ? '#3D352B' : '#E8DCBF'}
+          stroke={stroke}
+          strokeWidth="2.4"
+          strokeLinejoin="round"
+        />
+        {/* Draped Parisian Bistro Torchon (Napkin) */}
+        <path
+          d="M256 132C256 132 268 140 270 156C272 174 268 194 266 204C264 204 254 202 252 194C254 182 256 166 254 150L256 132Z"
+          fill={napkinColor}
+          stroke={stroke}
+          strokeWidth="2"
+          strokeLinejoin="round"
+        />
+        {/* Red Napkin Stripe */}
+        <path d="M258 150L268 154" stroke={crimson} strokeWidth="1.8" />
+        <path d="M256 162L266 166" stroke={crimson} strokeWidth="1.8" />
+      </g>
+
+      {/* Running Legs & Polished Oxford Shoes */}
+      <g>
+        {/* Back Leg Pushing Off */}
+        <path
+          d="M182 216L166 244L136 248L136 260L186 256L202 220"
+          fill="#1E1D1B"
+          stroke={stroke}
+          strokeWidth="2.4"
+          strokeLinejoin="round"
+        />
+        {/* Front Leg Stepping Forward */}
+        <path
+          d="M224 218L246 248L236 266L250 274L274 252L246 216"
+          fill="#1E1D1B"
+          stroke={stroke}
+          strokeWidth="2.4"
+          strokeLinejoin="round"
+        />
+        {/* Ground Speed Dashes */}
+        <line x1="120" y1="268" x2="175" y2="268" stroke={stroke} strokeWidth="2.4" strokeLinecap="round" opacity="0.4" />
+        <line x1="210" y1="278" x2="285" y2="278" stroke={stroke} strokeWidth="2.4" strokeLinecap="round" opacity="0.4" />
+      </g>
+    </svg>
+  );
+};
 
 export const ArtisanalSealBadgeSVG: React.FC<{ className?: string; stroke?: string }> = ({
   className = 'w-24 h-24',
@@ -2225,7 +2441,7 @@ export default function MokitoMenuApp() {
       const exists = prev.includes(itemId);
       const next = exists ? prev.filter((id) => id !== itemId) : [...prev, itemId];
       addToast(
-        exists ? 'Retiré de vos favoris' : '❤️ Ajouté à vos favoris MOKiTO !',
+        exists ? 'Retiré de vos favoris' : 'Ajouté à vos favoris MOKiTO !',
         'info'
       );
       return next;
@@ -2341,7 +2557,7 @@ export default function MokitoMenuApp() {
   // Generate WhatsApp Order Text
   const generateWhatsAppOrderUrl = () => {
     if (cart.length === 0) return '';
-    let msg = `Bonjour MOKiTO ! 👋\nVoici notre commande :\n\n`;
+    let msg = `Bonjour MOKiTO !\nVoici notre commande :\n\n`;
     cart.forEach((item, index) => {
       msg += `${index + 1}. *${item.quantity}x ${item.name}*`;
       if (item.protein) msg += ` (${item.protein})`;
@@ -2360,11 +2576,11 @@ export default function MokitoMenuApp() {
 
   const handleCallWaiter = (reason: 'waiter' | 'bill_cash' | 'bill_card') => {
     if (reason === 'waiter') {
-      addToast('🛎️ Serveur appelé !', 'bell');
+      addToast('Serveur appelé !', 'bell');
     } else if (reason === 'bill_cash') {
-      addToast("💵 Demande d'addition en Espèces envoyée", 'bell');
+      addToast("Demande d'addition en Espèces envoyée", 'bell');
     } else {
-      addToast('💳 Demande de TPE Carte Bancaire envoyée', 'bell');
+      addToast('Demande de TPE Carte Bancaire envoyée', 'bell');
     }
   };
 
@@ -2378,7 +2594,7 @@ export default function MokitoMenuApp() {
       }).catch(() => {});
     } else {
       navigator.clipboard?.writeText(url);
-      addToast('🔗 Lien du menu copié dans le presse-papier !');
+      addToast('Lien du menu copié dans le presse-papier !');
     }
   };
 
@@ -2572,8 +2788,10 @@ export default function MokitoMenuApp() {
                   className="mt-6 pt-5 border-t w-full grid grid-cols-1 sm:grid-cols-3 gap-3 text-left"
                   style={{ borderColor: theme.border }}
                 >
-                  <div className="flex items-start gap-2.5 p-2 rounded-xl" style={{ backgroundColor: isDarkMode ? 'rgba(0,0,0,0.2)' : 'rgba(255,255,255,0.25)' }}>
-                    <span className="text-base">🥖</span>
+                  <div className="flex items-start gap-2.5 p-2.5 rounded-xl" style={{ backgroundColor: isDarkMode ? 'rgba(0,0,0,0.2)' : 'rgba(255,255,255,0.25)' }}>
+                    <div className="w-7 h-7 rounded-lg bg-[#C83E2B]/10 flex items-center justify-center shrink-0 text-[#C83E2B]">
+                      <PillarBreadIcon className="w-4 h-4" />
+                    </div>
                     <div>
                       <div className="mokito-heading text-xs sm:text-sm font-bold uppercase tracking-wider">
                         Assiette Comestible
@@ -2584,8 +2802,10 @@ export default function MokitoMenuApp() {
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-2.5 p-2 rounded-xl" style={{ backgroundColor: isDarkMode ? 'rgba(0,0,0,0.2)' : 'rgba(255,255,255,0.25)' }}>
-                    <span className="text-base">🧀</span>
+                  <div className="flex items-start gap-2.5 p-2.5 rounded-xl" style={{ backgroundColor: isDarkMode ? 'rgba(0,0,0,0.2)' : 'rgba(255,255,255,0.25)' }}>
+                    <div className="w-7 h-7 rounded-lg bg-[#C83E2B]/10 flex items-center justify-center shrink-0 text-[#C83E2B]">
+                      <PillarCheeseIcon className="w-4 h-4" />
+                    </div>
                     <div>
                       <div className="mokito-heading text-xs sm:text-sm font-bold uppercase tracking-wider">
                         Fondue & Confit
@@ -2596,8 +2816,10 @@ export default function MokitoMenuApp() {
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-2.5 p-2 rounded-xl" style={{ backgroundColor: isDarkMode ? 'rgba(0,0,0,0.2)' : 'rgba(255,255,255,0.25)' }}>
-                    <span className="text-base">🥔</span>
+                  <div className="flex items-start gap-2.5 p-2.5 rounded-xl" style={{ backgroundColor: isDarkMode ? 'rgba(0,0,0,0.2)' : 'rgba(255,255,255,0.25)' }}>
+                    <div className="w-7 h-7 rounded-lg bg-[#C83E2B]/10 flex items-center justify-center shrink-0 text-[#C83E2B]">
+                      <PillarPotatoIcon className="w-4 h-4" />
+                    </div>
                     <div>
                       <div className="mokito-heading text-xs sm:text-sm font-bold uppercase tracking-wider">
                         Potatoes Incluses
@@ -2637,31 +2859,34 @@ export default function MokitoMenuApp() {
                 </div>
               </div>
 
-              {/* Right Column: Visual Concept Showcase with Signature Bread Bowl & Brand Seals */}
+              {/* Right Column: Visual Concept Showcase with Masterpiece French Bistro Mascot */}
               <div className="lg:col-span-5 flex flex-col items-center justify-center relative">
                 <div
-                  className="relative p-4 rounded-3xl border shadow-lg flex flex-col items-center justify-center w-full max-w-sm"
+                  className="relative p-6 rounded-3xl border shadow-xl flex flex-col items-center justify-center w-full max-w-sm overflow-hidden"
                   style={{
-                    backgroundColor: isDarkMode ? 'rgba(38, 34, 30, 0.85)' : 'rgba(247, 238, 223, 0.90)',
-                    borderColor: theme.border
+                    backgroundColor: isDarkMode ? 'rgba(38, 34, 30, 0.90)' : 'rgba(247, 238, 223, 0.92)',
+                    borderColor: theme.borderSolid
                   }}
                 >
-                  {/* Subtle Background Watermark Logo */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none overflow-hidden">
-                    <RunningServerIllustration className="w-64 h-64 scale-125" stroke={theme.borderSolid} />
+                  {/* Subtle Decorative Vintage Corner Accents */}
+                  <div className="absolute top-3.5 left-3.5 opacity-30">
+                    <DiamondSVG className="w-2.5 h-2.5" />
+                  </div>
+                  <div className="absolute top-3.5 right-3.5 opacity-30">
+                    <DiamondSVG className="w-2.5 h-2.5" />
                   </div>
 
-                  {/* Rich Signature Bread Bowl Showcase */}
-                  <div className="relative z-10 w-full flex flex-col items-center">
-                    <div className="w-48 h-36 sm:w-56 sm:h-40 flex items-center justify-center">
-                      <BreadBowlArtisanalIllustration className="w-full h-full object-contain filter drop-shadow-md" stroke={theme.borderSolid} />
-                    </div>
-
-
+                  {/* Masterpiece French Bistro Server Mascot (Cloche Service) */}
+                  <div className="relative z-10 w-full flex flex-col items-center justify-center py-2">
+                    <RunningServerIllustration
+                      className="w-56 h-48 sm:w-64 sm:h-56 filter drop-shadow-md"
+                      stroke={theme.borderSolid}
+                      isDark={isDarkMode}
+                    />
                   </div>
 
                   {/* Floating Artisanal Quality Seal */}
-                  <div className="absolute -bottom-4 -right-4 hidden sm:block z-20">
+                  <div className="absolute -bottom-3 -right-3 hidden sm:block z-20">
                     <ArtisanalSealBadgeSVG className="w-20 h-20 filter drop-shadow-md" stroke={theme.borderSolid} />
                   </div>
                 </div>
@@ -3494,7 +3719,7 @@ export default function MokitoMenuApp() {
                     </div>
                     <div>
                       <span className="mokito-heading text-[11px] uppercase font-bold tracking-wider opacity-75 block">
-                        💡 IDÉAL AVEC CE PLAT
+                        ACCORD CONSEILLÉ
                       </span>
                       <span className="font-bold">
                         {ALL_ITEMS_MAP[selectedDish.suggestedPairingId].name} (+{ALL_ITEMS_MAP[selectedDish.suggestedPairingId].price || ALL_ITEMS_MAP[selectedDish.suggestedPairingId].prices?.poulet} DT)
