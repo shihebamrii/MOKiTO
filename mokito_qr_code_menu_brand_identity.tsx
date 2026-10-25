@@ -1510,23 +1510,6 @@ export const HeartSVG: React.FC<{ className?: string; filled?: boolean }> = ({
   </svg>
 );
 
-export const QrCodeSVG: React.FC<{ className?: string }> = ({ className = 'w-4 h-4' }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <rect width="5" height="5" x="3" y="3" rx="1" />
-    <rect width="5" height="5" x="16" y="3" rx="1" />
-    <rect width="5" height="5" x="3" y="16" rx="1" />
-    <path d="M21 16h-3a2 2 0 0 0-2 2v3" />
-    <path d="M21 21v.01" />
-    <path d="M12 7v3a2 2 0 0 1-2 2H7" />
-    <path d="M3 12h.01" />
-    <path d="M12 3h.01" />
-    <path d="M12 16v.01" />
-    <path d="M16 12h1" />
-    <path d="M21 12v.01" />
-    <path d="M12 21v-1" />
-  </svg>
-);
-
 export const BellSVG: React.FC<{ className?: string }> = ({ className = 'w-4 h-4' }) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
     <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
@@ -1620,94 +1603,59 @@ export const FacebookSVG: React.FC<{ className?: string }> = ({ className = 'w-4
   </svg>
 );
 
-// High-fidelity Bespoke Vector QR Code with MOKiTO Center Monogram
-export const BespokeMokitoQRCodeSVG: React.FC<{
-  className?: string;
-  tableNumber?: string;
-  fgColor?: string;
-  bgColor?: string;
-}> = ({
-  className = 'w-56 h-56',
-  tableNumber = '1',
-  fgColor = '#1E1D1B',
-  bgColor = '#F4E8D3'
-}) => {
-  return (
-    <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
-      <rect width="240" height="240" rx="16" fill={bgColor} />
+// ============================================================================
+// AUTHENTIC DELIVERY PARTNERS VECTOR LOGOS (GLOVO, YASSIR, KOOL TUNISIA)
+// ============================================================================
 
-      {/* Corner Finder Patterns */}
-      <rect x="20" y="20" width="56" height="56" rx="8" stroke={fgColor} strokeWidth="6" />
-      <rect x="33" y="33" width="30" height="30" rx="4" fill={fgColor} />
-
-      <rect x="164" y="20" width="56" height="56" rx="8" stroke={fgColor} strokeWidth="6" />
-      <rect x="177" y="33" width="30" height="30" rx="4" fill={fgColor} />
-
-      <rect x="20" y="164" width="56" height="56" rx="8" stroke={fgColor} strokeWidth="6" />
-      <rect x="33" y="177" width="30" height="30" rx="4" fill={fgColor} />
-
-      {/* Timing Patterns */}
-      <line x1="84" y1="48" x2="156" y2="48" stroke={fgColor} strokeWidth="5" strokeDasharray="6 6" />
-      <line x1="48" y1="84" x2="48" y2="156" stroke={fgColor} strokeWidth="5" strokeDasharray="6 6" />
-
-      {/* Alignment Pattern */}
-      <rect x="170" y="170" width="36" height="36" rx="4" stroke={fgColor} strokeWidth="4" />
-      <rect x="183" y="183" width="10" height="10" rx="2" fill={fgColor} />
-
-      {/* QR Data Grid Dots */}
-      <g fill={fgColor}>
-        <rect x="90" y="24" width="10" height="10" rx="2" />
-        <rect x="108" y="24" width="10" height="10" rx="2" />
-        <rect x="126" y="24" width="10" height="10" rx="2" />
-        <rect x="144" y="24" width="10" height="10" rx="2" />
-        <rect x="90" y="66" width="10" height="10" rx="2" />
-        <rect x="114" y="66" width="10" height="10" rx="2" />
-        <rect x="138" y="66" width="10" height="10" rx="2" />
-        <rect x="24" y="90" width="10" height="10" rx="2" />
-        <rect x="24" y="108" width="10" height="10" rx="2" />
-        <rect x="24" y="126" width="10" height="10" rx="2" />
-        <rect x="24" y="144" width="10" height="10" rx="2" />
-        <rect x="66" y="90" width="10" height="10" rx="2" />
-        <rect x="66" y="114" width="10" height="10" rx="2" />
-        <rect x="66" y="138" width="10" height="10" rx="2" />
-        <rect x="168" y="90" width="10" height="10" rx="2" />
-        <rect x="186" y="90" width="10" height="10" rx="2" />
-        <rect x="204" y="90" width="10" height="10" rx="2" />
-        <rect x="168" y="108" width="10" height="10" rx="2" />
-        <rect x="198" y="126" width="10" height="10" rx="2" />
-        <rect x="168" y="144" width="10" height="10" rx="2" />
-        <rect x="204" y="144" width="10" height="10" rx="2" />
-        <rect x="90" y="168" width="10" height="10" rx="2" />
-        <rect x="108" y="168" width="10" height="10" rx="2" />
-        <rect x="126" y="168" width="10" height="10" rx="2" />
-        <rect x="144" y="168" width="10" height="10" rx="2" />
-        <rect x="90" y="198" width="10" height="10" rx="2" />
-        <rect x="114" y="186" width="10" height="10" rx="2" />
-        <rect x="138" y="204" width="10" height="10" rx="2" />
-      </g>
-
-      {/* Center Monogram Shield: MOKiTO Monogram */}
-      <rect x="80" y="80" width="80" height="80" rx="14" fill={bgColor} stroke={fgColor} strokeWidth="3.5" />
-      <g transform="translate(86, 92) scale(0.18)">
-        <path d="M28 84V14L54 64L80 14V84" stroke={fgColor} strokeWidth="18" strokeLinecap="round" strokeLinejoin="round" />
-        <rect x="104" y="14" width="50" height="70" rx="14" stroke={fgColor} strokeWidth="18" />
-        <path d="M190 14V84M190 50L236 14M205 39L240 84" stroke={fgColor} strokeWidth="18" strokeLinecap="round" strokeLinejoin="round" />
-        <circle cx="275" cy="20" r="10" fill={fgColor} />
-        <path d="M275 38V84" stroke={fgColor} strokeWidth="18" strokeLinecap="round" />
-        <path d="M305 14H355M330 14V84" stroke={fgColor} strokeWidth="18" strokeLinecap="round" />
-      </g>
-      <text
-        x="120"
-        y="152"
-        textAnchor="middle"
-        fill={fgColor}
-        style={{ fontFamily: "'Oswald', sans-serif", fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em' }}
-      >
-        TABLE {tableNumber}
-      </text>
+export const GlovoOfficialLogoSVG: React.FC<{ className?: string }> = ({ className = '' }) => (
+  <div
+    className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full shadow-sm select-none transition-transform hover:scale-105 ${className}`}
+    style={{ backgroundColor: '#FFC244', color: '#00A082' }}
+    title="Commander sur Glovo Tunisie"
+  >
+    <svg viewBox="0 0 24 24" fill="#00A082" className="w-3.5 h-3.5 shrink-0" aria-hidden="true">
+      <path d="M12.012 0C7.847 0 4.459 3.388 4.459 7.553c0 1.576.494 3.106 1.412 4.4l.211.281 3.93 5.555s.47.775 1.529.775h.941c1.036 0 1.53-.775 1.53-.775l3.93-5.555.187-.28a7.43 7.43 0 0 0 1.412-4.401C19.564 3.388 16.176 0 12.011 0Zm0 3.693a3.837 3.837 0 0 1 3.836 3.836c0 .824-.26 1.578-.73 2.237l-.212.28-2.894 4.095-2.895-4.07-.21-.305a3.848 3.848 0 0 1-.731-2.237 3.837 3.837 0 0 1 3.836-3.836zm-2.117 18.26c0 1.106.893 2.023 2.07 2.047 1.223 0 2.117-.917 2.117-2.059 0-1.14-.894-2.058-2.094-2.058-1.2 0-2.093.917-2.093 2.07z" />
     </svg>
-  );
-};
+    <span className="font-extrabold text-[12px] tracking-tight leading-none text-[#00A082] font-sans">
+      glovo
+    </span>
+  </div>
+);
+
+export const YassirOfficialLogoSVG: React.FC<{ className?: string }> = ({ className = '' }) => (
+  <div
+    className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full shadow-sm select-none transition-transform hover:scale-105 ${className}`}
+    style={{ backgroundColor: '#E60028', color: '#FFFFFF' }}
+    title="Commander sur Yassir Express"
+  >
+    <svg viewBox="0 0 24 24" fill="none" className="w-3.5 h-3.5 shrink-0" aria-hidden="true">
+      <circle cx="12" cy="12" r="10" fill="white" fillOpacity="0.2" />
+      <path d="M7 8L11 13V17M17 8L11 13" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+    <span className="font-black text-[12px] tracking-tight lowercase leading-none text-white font-sans">
+      yassir
+    </span>
+    <span className="text-[8px] font-bold tracking-widest uppercase bg-black/25 px-1 py-0.2 rounded text-white/90">
+      express
+    </span>
+  </div>
+);
+
+export const KoolOfficialLogoSVG: React.FC<{ className?: string }> = ({ className = '' }) => (
+  <div
+    className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full shadow-sm select-none transition-transform hover:scale-105 ${className}`}
+    style={{ backgroundColor: '#FFD500', color: '#1A1A1A' }}
+    title="Commander sur KooL Delivery Tunisie"
+  >
+    <span className="font-black text-[12px] tracking-tight lowercase leading-none text-[#1A1A1A] font-sans">
+      kool
+    </span>
+    <span className="w-1.5 h-1.5 rounded-full bg-[#FF6E00] shrink-0" />
+    <span className="text-[8px] font-bold tracking-wider uppercase text-[#1A1A1A]/80 leading-none">
+      delivery
+    </span>
+  </div>
+);
 
 // ============================================================================
 // COMPLETE AUTHENTIC MENU DATA (MOKiTO TUNIS)
@@ -2203,9 +2151,6 @@ export default function MokitoMenuApp() {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
 
   // Table Assignment
-  const [tableNumber, setTableNumber] = useState<string>('4');
-  const [isTableModalOpen, setIsTableModalOpen] = useState<boolean>(false);
-
   // Favorites (persisted in localStorage)
   const [favorites, setFavorites] = useState<string[]>(() => {
     try {
@@ -2388,7 +2333,7 @@ export default function MokitoMenuApp() {
   // Generate WhatsApp Order Text
   const generateWhatsAppOrderUrl = () => {
     if (cart.length === 0) return '';
-    let msg = `Bonjour MOKiTO ! 👋\nVoici notre commande pour la *Table N° ${tableNumber}* :\n\n`;
+    let msg = `Bonjour MOKiTO ! 👋\nVoici notre commande :\n\n`;
     cart.forEach((item, index) => {
       msg += `${index + 1}. *${item.quantity}x ${item.name}*`;
       if (item.protein) msg += ` (${item.protein})`;
@@ -2407,11 +2352,11 @@ export default function MokitoMenuApp() {
 
   const handleCallWaiter = (reason: 'waiter' | 'bill_cash' | 'bill_card') => {
     if (reason === 'waiter') {
-      addToast(`🛎️ Serveur appelé pour la Table N° ${tableNumber} !`, 'bell');
+      addToast('🛎️ Serveur appelé !', 'bell');
     } else if (reason === 'bill_cash') {
-      addToast(`💵 Demande d'addition en Espèces envoyée (Table N° ${tableNumber})`, 'bell');
+      addToast("💵 Demande d'addition en Espèces envoyée", 'bell');
     } else {
-      addToast(`💳 Demande de TPE Carte Bancaire envoyée (Table N° ${tableNumber})`, 'bell');
+      addToast('💳 Demande de TPE Carte Bancaire envoyée', 'bell');
     }
   };
 
@@ -2521,14 +2466,7 @@ export default function MokitoMenuApp() {
           </div>
 
           <div className="flex items-center gap-3 sm:gap-4 flex-wrap">
-            <button
-              onClick={() => setIsTableModalOpen(true)}
-              className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#352D26] text-[#EAD6B9] hover:bg-[#483E34] transition text-[11px] font-semibold"
-            >
-              <QrCodeSVG className="w-3 h-3 text-[#E4B875]" />
-              <span>Table N° {tableNumber}</span>
-              <span className="text-[10px] opacity-70">(Changer)</span>
-            </button>
+
 
             <a
               href="tel:29300029"
@@ -2677,17 +2615,17 @@ export default function MokitoMenuApp() {
                     <span>↓</span>
                   </a>
 
-                  <button
-                    onClick={() => setIsTableModalOpen(true)}
+                  <a
+                    href="tel:29300029"
                     className="px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider border transition flex items-center gap-1.5 hover:bg-black/10"
                     style={{
                       borderColor: theme.borderSolid,
                       color: theme.text
                     }}
                   >
-                    <QrCodeSVG className="w-3.5 h-3.5" />
-                    <span>Table {tableNumber} (QR Code)</span>
-                  </button>
+                    <PhoneSVG className="w-3.5 h-3.5" />
+                    <span>29 300 029</span>
+                  </a>
                 </div>
               </div>
 
@@ -2711,14 +2649,7 @@ export default function MokitoMenuApp() {
                       <BreadBowlArtisanalIllustration className="w-full h-full object-contain filter drop-shadow-md" stroke={theme.borderSolid} />
                     </div>
 
-                    <div className="mt-1 text-center">
-                      <div className="mokito-heading text-sm font-bold uppercase tracking-wider">
-                        LE BREAD BOWL SIGNATURE
-                      </div>
-                      <div className="text-[11px] font-medium" style={{ color: theme.textMuted }}>
-                        Poulet ou Viande Hachée • Servi chaud avec potatoes
-                      </div>
-                    </div>
+
                   </div>
 
                   {/* Floating Artisanal Quality Seal */}
@@ -2727,20 +2658,18 @@ export default function MokitoMenuApp() {
                   </div>
                 </div>
 
-                {/* Authentic Delivery Partners Bar */}
+                {/* Authentic Delivery Partners Bar with Real Official Logos */}
                 <div
-                  className="mt-4 flex items-center gap-3 px-4 py-1.5 rounded-full border text-[11px] font-bold"
+                  className="mt-4 flex items-center gap-2 px-3.5 py-1.5 rounded-full border text-[11px] font-bold shadow-sm flex-wrap justify-center"
                   style={{
                     borderColor: theme.border,
                     backgroundColor: isDarkMode ? '#24201C' : '#EFE2CA'
                   }}
                 >
-                  <span className="opacity-75 uppercase tracking-wider text-[10px]">Livraison rapide :</span>
-                  <span className="font-extrabold text-[#00A082]">Glovo</span>
-                  <span>•</span>
-                  <span className="font-extrabold text-[#E50914]">Yassir</span>
-                  <span>•</span>
-                  <span className="font-extrabold text-[#FF6600]">KooL</span>
+                  <span className="opacity-75 uppercase tracking-wider text-[10px] px-1">Livraison rapide :</span>
+                  <GlovoOfficialLogoSVG />
+                  <YassirOfficialLogoSVG />
+                  <KoolOfficialLogoSVG />
                 </div>
               </div>
             </div>
@@ -2749,26 +2678,56 @@ export default function MokitoMenuApp() {
       </header>
 
       {/* ====================================================================
-          STICKY CATEGORY NAVIGATION, SEARCH & SMART FILTERS
+          PREMIUM BISTRO STICKY NAVIGATION BAR
          ==================================================================== */}
       <nav
-        className="sticky top-0 z-30 backdrop-blur-md border-b-2 shadow-sm no-print"
+        id="menu-categories"
+        className="sticky top-0 z-30 backdrop-blur-md border-b-2 shadow-md transition-all duration-200 no-print"
         style={{
-          backgroundColor: isDarkMode ? 'rgba(23, 22, 20, 0.94)' : 'rgba(214, 190, 155, 0.94)',
+          backgroundColor: isDarkMode ? 'rgba(23, 21, 19, 0.95)' : 'rgba(239, 226, 202, 0.95)',
           borderColor: theme.borderSolid
         }}
       >
-        <div className="max-w-5xl mx-auto px-3 sm:px-6 py-2.5 space-y-2">
-          {/* Row 1: Search bar + Quick Dietary Chips + Table QR button */}
-          <div className="flex items-center gap-2 flex-wrap sm:flex-nowrap">
-            <div className="relative flex-1 min-w-[220px]">
-              <SearchSVG className="w-4 h-4 opacity-60 absolute left-3.5 top-1/2 -translate-y-1/2" />
+        <div className="max-w-5xl mx-auto px-3 sm:px-6 py-2 space-y-2">
+          {/* Tier 1: Brand Anchor + Search Bar + Filter Controls + Cart Trigger */}
+          <div className="flex items-center justify-between gap-2.5 flex-wrap sm:flex-nowrap">
+            {/* Brand Logo & Back to Top */}
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="flex items-center gap-2 text-left group shrink-0"
+              title="Retour en haut"
+            >
+              <div
+                className="w-8 h-8 rounded-xl flex items-center justify-center p-1 shadow-sm border transition-transform group-hover:scale-105"
+                style={{
+                  backgroundColor: isDarkMode ? '#F4E8D3' : '#1E1D1B',
+                  borderColor: theme.borderSolid
+                }}
+              >
+                <RunningServerIllustration
+                  className="w-full h-full object-contain"
+                  stroke={isDarkMode ? '#1E1D1B' : '#EFE2CA'}
+                />
+              </div>
+              <div className="hidden xs:block">
+                <span className="mokito-heading text-sm font-black tracking-wider uppercase block leading-none">
+                  MOKiTO
+                </span>
+                <span className="text-[9px] font-bold uppercase tracking-widest opacity-60 leading-none">
+                  Menzah 1
+                </span>
+              </div>
+            </button>
+
+            {/* Smart Search Input with Clear Button */}
+            <div className="relative flex-1 min-w-[170px] sm:min-w-[240px]">
+              <SearchSVG className="w-3.5 h-3.5 opacity-60 absolute left-3 top-1/2 -translate-y-1/2" />
               <input
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Rechercher (truffe, bresaola, camembert, saumon, spicy...)"
-                className="w-full pl-9 pr-8 py-2 rounded-xl text-xs sm:text-sm border focus:outline-none transition"
+                placeholder="Rechercher (truffe, spicy, saumon...)"
+                className="w-full pl-8 pr-7 py-1.5 rounded-xl text-xs sm:text-sm border focus:outline-none transition"
                 style={{
                   backgroundColor: theme.cardInner,
                   borderColor: theme.border,
@@ -2778,105 +2737,130 @@ export default function MokitoMenuApp() {
               {searchQuery && (
                 <button
                   onClick={() => setSearchQuery('')}
-                  className="absolute right-2.5 top-1/2 -translate-y-1/2 opacity-70 hover:opacity-100"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 opacity-70 hover:opacity-100 p-0.5"
                   aria-label="Effacer la recherche"
                 >
-                  <CloseSVG className="w-4 h-4" />
+                  <CloseSVG className="w-3.5 h-3.5" />
                 </button>
               )}
             </div>
 
-            <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar shrink-0">
+            {/* Quick Actions: Dietary Filters, Day/Night & Cart Trigger */}
+            <div className="flex items-center gap-1.5 shrink-0">
+              {/* Spicy Filter */}
               <button
                 onClick={() => setActiveDietFilter(activeDietFilter === 'spicy' ? 'all' : 'spicy')}
-                className={`flex items-center gap-1 px-3 py-1.5 rounded-xl text-xs font-bold uppercase tracking-wider border transition ${
+                className={`flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs font-bold uppercase tracking-wider border transition ${
                   activeDietFilter === 'spicy'
                     ? 'bg-[#C83E2B] text-white border-[#C83E2B]'
                     : 'border-opacity-40 hover:border-opacity-100'
                 }`}
                 style={{
                   backgroundColor: activeDietFilter === 'spicy' ? '#C83E2B' : theme.cardInner,
-                  borderColor: activeDietFilter === 'spicy' ? '#C83E2B' : theme.borderSolid
+                  borderColor: activeDietFilter === 'spicy' ? '#C83E2B' : theme.borderSolid,
+                  color: activeDietFilter === 'spicy' ? '#FFFFFF' : theme.text
                 }}
+                title="Filtrer les plats piquants"
               >
-                <ChiliPepperSVG className="w-3.5 h-3.5" />
-                <span>Piquant</span>
+                <ChiliPepperSVG className="w-3 h-3" />
+                <span className="hidden md:inline">Piquant</span>
               </button>
 
-              <button
-                onClick={() => setActiveDietFilter(activeDietFilter === 'chef' ? 'all' : 'chef')}
-                className={`flex items-center gap-1 px-3 py-1.5 rounded-xl text-xs font-bold uppercase tracking-wider border transition ${
-                  activeDietFilter === 'chef'
-                    ? 'bg-[#1E1D1B] text-[#EFE2CA] border-[#1E1D1B]'
-                    : 'border-opacity-40 hover:border-opacity-100'
-                }`}
-                style={{
-                  backgroundColor: activeDietFilter === 'chef' ? (isDarkMode ? '#EFE2CA' : '#1E1D1B') : theme.cardInner,
-                  color: activeDietFilter === 'chef' ? (isDarkMode ? '#1E1D1B' : '#EFE2CA') : theme.text,
-                  borderColor: theme.borderSolid
-                }}
-              >
-                <SparklesSVG className="w-3.5 h-3.5" />
-                <span>Signature</span>
-              </button>
-
+              {/* Favorites Filter */}
               <button
                 onClick={() => setActiveDietFilter(activeDietFilter === 'favorites' ? 'all' : 'favorites')}
-                className={`flex items-center gap-1 px-3 py-1.5 rounded-xl text-xs font-bold uppercase tracking-wider border transition ${
+                className={`flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs font-bold uppercase tracking-wider border transition ${
                   activeDietFilter === 'favorites'
                     ? 'bg-[#C83E2B] text-white border-[#C83E2B]'
                     : 'border-opacity-40 hover:border-opacity-100'
                 }`}
                 style={{
                   backgroundColor: activeDietFilter === 'favorites' ? '#C83E2B' : theme.cardInner,
-                  borderColor: activeDietFilter === 'favorites' ? '#C83E2B' : theme.borderSolid
+                  borderColor: activeDietFilter === 'favorites' ? '#C83E2B' : theme.borderSolid,
+                  color: activeDietFilter === 'favorites' ? '#FFFFFF' : theme.text
                 }}
+                title="Voir mes favoris"
               >
-                <HeartSVG className="w-3.5 h-3.5" filled={activeDietFilter === 'favorites'} />
-                <span>Favoris ({favorites.length})</span>
+                <HeartSVG className="w-3 h-3" filled={activeDietFilter === 'favorites'} />
+                <span className="hidden md:inline">Favoris</span>
+                {favorites.length > 0 && (
+                  <span className="px-1.5 py-0.2 rounded-full bg-white/20 text-[10px] font-bold">
+                    {favorites.length}
+                  </span>
+                )}
               </button>
 
+              {/* Day / Night Ambiance Toggle */}
               <button
-                onClick={() => setIsTableModalOpen(true)}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold uppercase tracking-wider border transition hover:opacity-90"
+                onClick={() => setIsDarkMode(!isDarkMode)}
+                className="p-1.5 rounded-xl border transition flex items-center justify-center hover:bg-black/10"
                 style={{
-                  backgroundColor: isDarkMode ? '#38322B' : '#E0CEB4',
+                  backgroundColor: theme.cardInner,
                   borderColor: theme.borderSolid,
                   color: theme.text
                 }}
-                title="Afficher le QR code de table"
+                title={isDarkMode ? 'Passer en Ambiance Jour' : 'Passer en Ambiance Soirée'}
+                aria-label="Basculer le mode sombre/clair"
               >
-                <QrCodeSVG className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">QR Table</span>
+                <SunMoonSVG className="w-3.5 h-3.5" isDark={isDarkMode} />
+              </button>
+
+              {/* Cart / Selection Trigger */}
+              <button
+                onClick={() => setIsCartOpen(true)}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold uppercase tracking-wider transition shadow-sm hover:scale-105 active:scale-95"
+                style={{
+                  backgroundColor: '#C83E2B',
+                  color: '#FFFFFF'
+                }}
+                title="Afficher ma sélection"
+              >
+                <CartSVG className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">Panier</span>
+                <span className="w-4 h-4 rounded-full bg-white text-[#C83E2B] text-[10px] font-black flex items-center justify-center">
+                  {totalCartItems}
+                </span>
+                {totalCartPrice > 0 && (
+                  <span className="hidden lg:inline text-[11px] font-extrabold border-l border-white/30 pl-1.5">
+                    {totalCartPrice.toFixed(1).replace('.0', '')} DT
+                  </span>
+                )}
               </button>
             </div>
           </div>
 
-          {/* Row 2: Category Jump Pills */}
-          <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar pt-0.5">
+          {/* Tier 2: Category Jump Ribbon with Vector Icons & Item Counts */}
+          <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar pt-1 pb-0.5 border-t border-black/5 dark:border-white/5">
             <button
               onClick={() => setActiveCategory('all')}
-              className={`mokito-heading tracking-wider uppercase px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold shrink-0 transition ${
-                activeCategory === 'all'
-                  ? 'bg-[#1E1D1B] text-[#EFE2CA]'
-                  : 'hover:bg-black/10'
+              className={`mokito-heading tracking-wider uppercase px-3 py-1 rounded-xl text-xs font-bold shrink-0 transition flex items-center gap-1.5 ${
+                activeCategory === 'all' ? 'shadow-sm' : 'hover:bg-black/10'
               }`}
               style={{
                 backgroundColor: activeCategory === 'all' ? (isDarkMode ? '#F4E8D3' : '#1E1D1B') : 'transparent',
                 color: activeCategory === 'all' ? (isDarkMode ? '#1E1D1B' : '#EFE2CA') : theme.text
               }}
             >
-              TOUTE LA CARTE
+              <span>TOUTE LA CARTE</span>
+              <span
+                className="text-[10px] px-1.5 py-0.2 rounded-full font-bold opacity-80"
+                style={{
+                  backgroundColor: activeCategory === 'all' ? (isDarkMode ? 'rgba(30,29,27,0.15)' : 'rgba(239, 226, 202, 0.25)') : 'rgba(0,0,0,0.08)'
+                }}
+              >
+                22
+              </span>
             </button>
 
             {MENU_CATEGORIES.map((cat) => {
               const IconComponent = cat.icon;
               const isActive = activeCategory === cat.id;
+              const count = cat.items.length;
               return (
                 <button
                   key={cat.id}
                   onClick={() => setActiveCategory(cat.id)}
-                  className={`mokito-heading tracking-wider uppercase px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold shrink-0 transition flex items-center gap-1.5 ${
+                  className={`mokito-heading tracking-wider uppercase px-3 py-1 rounded-xl text-xs font-bold shrink-0 transition flex items-center gap-1.5 ${
                     isActive ? 'shadow-sm' : 'hover:bg-black/10'
                   }`}
                   style={{
@@ -2884,19 +2868,30 @@ export default function MokitoMenuApp() {
                     color: isActive ? (isDarkMode ? '#1E1D1B' : '#EFE2CA') : theme.text
                   }}
                 >
-                  <IconComponent className="w-4 h-4" />
+                  <IconComponent className="w-3.5 h-3.5 shrink-0" />
                   <span>{cat.title}</span>
+                  <span
+                    className="text-[10px] px-1.5 py-0.2 rounded-full font-bold opacity-80"
+                    style={{
+                      backgroundColor: isActive ? (isDarkMode ? 'rgba(30,29,27,0.15)' : 'rgba(239, 226, 202, 0.25)') : 'rgba(0,0,0,0.08)'
+                    }}
+                  >
+                    {count}
+                  </span>
                 </button>
               );
             })}
 
             <a
               href="#supplements-section"
-              className="mokito-heading tracking-wider uppercase px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold shrink-0 transition hover:bg-black/10 flex items-center gap-1.5"
+              className="mokito-heading tracking-wider uppercase px-3 py-1 rounded-xl text-xs font-bold shrink-0 transition hover:bg-black/10 flex items-center gap-1.5"
               style={{ color: theme.text }}
             >
-              <SupplementsIcon className="w-4 h-4" />
+              <SupplementsIcon className="w-3.5 h-3.5" />
               <span>SUPPLÉMENTS</span>
+              <span className="text-[10px] px-1.5 py-0.2 rounded-full font-bold bg-black/5 dark:bg-white/5 opacity-80">
+                10
+              </span>
             </a>
           </div>
         </div>
@@ -3273,25 +3268,13 @@ export default function MokitoMenuApp() {
               </div>
             </div>
 
-            <div className="flex items-center gap-5">
-              <div className="flex items-center gap-1 font-extrabold text-base tracking-tight">
-                <span>Glovo</span>
-                <svg viewBox="0 0 16 20" fill="none" className="w-3.5 h-4">
-                  <path d="M8 1C4.5 1 2 3.6 2 7C2 11.2 8 17 8 17C8 17 14 11.2 14 7C14 3.6 11.5 1 8 1Z" stroke="currentColor" strokeWidth="2" />
-                  <circle cx="8" cy="19" r="1.2" fill="currentColor" />
-                </svg>
-              </div>
-
-              <div className="leading-none text-center">
-                <div className="font-black text-base tracking-tight">Yassir</div>
-                <div className="text-[10px] font-bold tracking-widest uppercase opacity-75">
-                  express
-                </div>
-              </div>
-
-              <div className="font-black text-base tracking-wide">
-                KooL
-              </div>
+            <div className="flex items-center gap-2.5 flex-wrap">
+              <span className="text-[11px] font-semibold opacity-70 uppercase tracking-wider hidden sm:inline">
+                Partenaires :
+              </span>
+              <GlovoOfficialLogoSVG />
+              <YassirOfficialLogoSVG />
+              <KoolOfficialLogoSVG />
             </div>
           </div>
 
@@ -3327,7 +3310,7 @@ export default function MokitoMenuApp() {
                 </div>
                 <div className="text-left">
                   <div className="mokito-heading text-base font-bold tracking-wider uppercase">
-                    MA SÉLECTION (TABLE {tableNumber})
+                    MA SÉLECTION
                   </div>
                   <div className="text-[11px] text-[#D6BE9B]">
                     Afficher au serveur ou commander sur WhatsApp
@@ -3612,9 +3595,7 @@ export default function MokitoMenuApp() {
                   <h3 className="mokito-heading text-2xl font-bold tracking-wider uppercase">
                     MA SÉLECTION MOKiTO
                   </h3>
-                  <span className="px-2 py-0.5 rounded bg-[#C83E2B] text-white text-[11px] font-bold">
-                    Table {tableNumber}
-                  </span>
+
                 </div>
                 <p className="text-xs text-[#D6BE9B] mt-0.5">
                   Présentez au serveur ou commandez directement sur WhatsApp
@@ -3822,111 +3803,6 @@ export default function MokitoMenuApp() {
         </div>
       )}
 
-      {/* ====================================================================
-          TABLE QR CODE GENERATOR & CHEVALET DE TABLE MODAL
-         ==================================================================== */}
-      {isTableModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 no-print">
-          <div
-            className="border-2 rounded-2xl max-w-md w-full overflow-hidden shadow-2xl animate-in fade-in zoom-in-95 duration-150"
-            style={{
-              backgroundColor: isDarkMode ? '#24211D' : '#DFC9A8',
-              borderColor: theme.borderSolid,
-              color: theme.text
-            }}
-          >
-            <div className="bg-[#1E1D1B] text-[#EFE2CA] px-5 py-4 flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <QrCodeSVG className="w-5 h-5 text-[#E4B875]" />
-                <h3 className="mokito-heading text-xl font-bold tracking-wider uppercase">
-                  QR CODE & CHEVALET DE TABLE
-                </h3>
-              </div>
-              <button
-                onClick={() => setIsTableModalOpen(false)}
-                className="p-1 rounded-lg hover:bg-white/10 text-[#EFE2CA]"
-                aria-label="Fermer"
-              >
-                <CloseSVG className="w-5 h-5" />
-              </button>
-            </div>
-
-            <div className="p-6 text-center space-y-4">
-              <div>
-                <label className="mokito-heading text-xs font-bold uppercase tracking-wider block mb-2 opacity-80">
-                  Numéro de Table
-                </label>
-                <div className="flex items-center justify-center gap-1.5 flex-wrap">
-                  {['1', '2', '3', '4', '5', '6', '7', '8', 'T1', 'T2', 'À Emporter'].map((num) => (
-                    <button
-                      key={num}
-                      onClick={() => {
-                        setTableNumber(num);
-                        addToast(`Table réglée sur : ${num}`);
-                      }}
-                      className={`px-3 py-1 rounded-lg text-xs font-bold uppercase border transition ${
-                        tableNumber === num
-                          ? 'bg-[#1E1D1B] text-[#EFE2CA] border-[#1E1D1B]'
-                          : 'bg-[#EFE2CA] text-[#1E1D1B] border-[#1E1D1B]/30 hover:border-[#1E1D1B]'
-                      }`}
-                    >
-                      {num}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              <div className="flex justify-center p-3">
-                <div
-                  className="p-4 rounded-2xl border-2 shadow-inner inline-block"
-                  style={{
-                    backgroundColor: '#F4E8D3',
-                    borderColor: '#1E1D1B'
-                  }}
-                >
-                  <BespokeMokitoQRCodeSVG
-                    className="w-48 h-48 sm:w-56 sm:h-56"
-                    tableNumber={tableNumber}
-                    fgColor="#1E1D1B"
-                    bgColor="#F4E8D3"
-                  />
-                  <div className="mt-2 text-center text-[11px] font-bold uppercase tracking-widest text-[#1E1D1B]">
-                    MOKiTO • MENZAH 1
-                  </div>
-                </div>
-              </div>
-
-              <p className="text-xs opacity-75 max-w-xs mx-auto">
-                Scannez avec un appareil photo pour ouvrir la carte digitale configurée pour la Table N° {tableNumber}.
-              </p>
-
-              <div className="pt-2 flex items-center justify-center gap-3">
-                <button
-                  onClick={() => {
-                    window.print();
-                  }}
-                  className="px-4 py-2.5 rounded-xl border-2 text-xs font-bold uppercase tracking-wider flex items-center gap-2 hover:bg-black/10 transition"
-                  style={{ borderColor: theme.borderSolid }}
-                >
-                  <PrintSVG className="w-4 h-4" />
-                  <span>Imprimer le chevalet</span>
-                </button>
-
-                <button
-                  onClick={() => {
-                    handleShareMenu();
-                    setIsTableModalOpen(false);
-                  }}
-                  className="px-4 py-2.5 rounded-xl bg-[#1E1D1B] text-[#EFE2CA] text-xs font-bold uppercase tracking-wider flex items-center gap-2 hover:bg-[#C83E2B] transition"
-                >
-                  <ShareSVG className="w-4 h-4" />
-                  <span>Partager le lien</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* ====================================================================
           FLOATING TOAST NOTIFICATION CONTAINER
